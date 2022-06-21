@@ -15,8 +15,8 @@ class Product(models.Model):
     product_image= models.ImageField(upload_to='images/')
     description = models.TextField(max_length=300)
     quantity= models.IntegerField(null=True, blank=True)
-    category = models.ForeignKey("Category", on_delete=models.CASCADE)
-    retailer=models.ForeignKey("Retailer",on_delete=models.CASCADE)
+    Category = models.ForeignKey("Category", on_delete=models.CASCADE)
+    Retailer=models.ForeignKey("Retailer",on_delete=models.CASCADE)
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
