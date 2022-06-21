@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth import AbstractUser
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
@@ -8,10 +7,11 @@ class User(AbstractUser):
     is_customer = models.BooleanField(default=False)
     is_retailer = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
+    
 
 class Product(models.Model):
     name = models.CharField(max_length=50)
-    price = models.IntegerField(max_length=60)
+    price = models.IntegerField()
     product_image= models.ImageField(upload_to='images/')
     description = models.TextField(max_length=300)
     quantity= models.IntegerField(null=True, blank=True)
@@ -40,15 +40,15 @@ class Review(models.Model):
 class Customer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     name = models.CharField(max_length=50)
-    address = models.IntergerField(max_length=60)
+    address = models.IntegerField()
     city = models.TextField(max_length=20)
     county= models.TextField(max_length=20)
     account = models.ForeignKey("Account", on_delete=models.CASCADE)
 
-class Account(User):
+class Account(models.Model):
     name = models.CharField(max_length=50)
-    phone_number= models.IntegerField(max_length=60)
-    email= models.EmailField(max_length=20)
+    phone_number= models.IntegerField()
+    email= models.EmailField(max_length=60)
     bio= models.TextField(max_length=100)
     
 
