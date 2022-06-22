@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'paint',
+    'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -74,14 +77,30 @@ WSGI_APPLICATION = 'pentware.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'paintware',
+#         'USER': 'alinur',
+#         'PASSWORD':'admin',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'paintware',
-        'USER': 'alinur',
-        'PASSWORD':'admin',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'pentware',
+#         'USER': 'postgres',
+#         'PASSWORD': 'gichuru',
+#     }
+# }
 
 
 # Password validation
@@ -119,6 +138,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': None
+    },
+}
+
+CART_SESSION_ID = 'cart'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
