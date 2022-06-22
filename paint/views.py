@@ -38,10 +38,6 @@ def get_links(request):
 
 @api_view(['POST'])
 def register(request):
-   endpoints = {
-    'all':'/api/',
-    'all_todos':'/api/todos'
-   }
    username = request.data['username']
    email = request.data['email']
    password = request.data['password']
