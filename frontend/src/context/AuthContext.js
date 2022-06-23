@@ -2,7 +2,6 @@ import jwtDecode from 'jwt-decode';
 import * as React from 'react';
 import { useLocation } from 'wouter';
 const AuthContext = React.createContext();
-import axios from 'axios';
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
@@ -18,35 +17,6 @@ export const AuthProvider = ({ children }) => {
 			? JSON.parse(localStorage.getItem('authToken'))
 			: null
 	);
-
-	let signupUser = async (e) => {
-		e.preventDefault();
-		let response = await axios.send('/api/auth/signup', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				first_name: e.target.first_name.value,
-				last_name: e.target.last_name.value,
-				email: e.target.email.value,
-				password: e.target.password.value,
-			}),
-		});
-
-		let data = await response.json();
-
-		if (response.status === 200) {
-			setAuthToken(data);
-			setUser(jwtDecode(data.access));
-			localStorage.setItem('authToken', JSON.stringify(data));
-			setLocation('/');
-		} else {
-			alert('Something went wrong');
-		}
-
-		console.log(response);
-	};
 
 	let loginUser = async (e) => {
 		e.preventDefault();
@@ -104,7 +74,6 @@ export const AuthProvider = ({ children }) => {
 
 	let contextData = {
 		user: user,
-		signupUser: signupUser,
 		loginUser: loginUser,
 		logoutUser: logoutUser,
 	};

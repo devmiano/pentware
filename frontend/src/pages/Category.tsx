@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Redirect } from 'wouter';
 import LongCard from '../components/LongCard';
+import Navbar from '../components/Navbar';
 import Title from '../components/Title';
 import AuthContext from '../context/AuthContext';
 import { useFetchCategoriesQuery } from '../services/category';
@@ -16,11 +17,12 @@ function Category() {
 
 	return (
 		<>
+			<Navbar />
 			{heading}
 			{data.map((category) =>
 				LongCard({
 					id: category.id,
-					title: category.title,
+					title: category.name,
 					subtitle: category.location,
 					text: category.about,
 					photo: category.photo,

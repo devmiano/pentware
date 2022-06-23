@@ -4,7 +4,7 @@ const TOKEN = 'Token 557d835e6402604a1f8d28058f12a892e3b81e56';
 
 interface DispCategory {
 	id: string;
-	title: string;
+	name: string;
 	location: string;
 	about: string;
 	photo: string;
@@ -13,7 +13,7 @@ interface DispCategory {
 export const categoryApiSlice = createApi({
 	reducerPath: 'category',
 	baseQuery: fetchBaseQuery({
-		baseUrl: 'api/data/',
+		baseUrl: '/api/shop/',
 		prepareHeaders(headers) {
 			headers.set('Authorization', TOKEN);
 			return headers;
@@ -23,7 +23,7 @@ export const categoryApiSlice = createApi({
 		return {
 			fetchCategories: builder.query<DispCategory[], number | void>({
 				query() {
-					return `hoods/`;
+					return `categories/`;
 				},
 			}),
 		};

@@ -6,7 +6,7 @@ interface TitleInterface {
 
 function Title(title: TitleInterface) {
 	return (
-		<h1 className='tracking-wide text-4xl text-lime-400 font-semibold text-center py-4'>
+		<h1 className='tracking-wide text-4xl text-smog-200 font-semibold text-center py-4'>
 			{title.title}
 		</h1>
 	);

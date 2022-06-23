@@ -3,10 +3,13 @@
 @tailwind utilities;
 @layer base {
 	html {
-		@apply antialiased bg-lime-700;
+		@apply antialiased bg-smog-700;
 	}
 	.link {
-		@apply px-8 py-1 text-lime-400 rounded-full hover:bg-lime-600 hover:text-lime-200 hover:scale-110 transition-all;
+		@apply px-4 py-1 text-smog-300 rounded-full hover:bg-smog-700 hover:text-smog-400 hover:scale-110 transition-all;
+	}
+	.brand {
+		@apply px-4 py-1 text-smog-400 rounded-full hover:bg-smog-700 hover:text-smog-400 hover:scale-110 transition-all;
 	}
 }
 @import '~spinners-react/lib/index.css';

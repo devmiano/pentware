@@ -10,8 +10,8 @@ function Navbar() {
 
 	const authlinks = (
 		<div className='flex items-center justify-center'>
-			<Link to='/' className='link'>
-				<p>{user?.email}</p>
+			<Link to='/' className='brand'>
+				{user?.email}
 			</Link>
 			<button className='link' onClick={logoutUser}>
 				Logout
@@ -29,19 +29,22 @@ function Navbar() {
 		</div>
 	);
 	return (
-		<nav className='w-screen z-30 flex justify-between bg-lime-700 p-2'>
-			<Link to='/' className='link flex items-center justify-center'>
-				HOOD
+		<nav className='w-screen z-30 flex justify-between bg-smog-600 p-2'>
+			<Link to='/' className='brand flex items-center justify-center'>
+				PENTWARE
 			</Link>
 			<div className='flex items-center justify-center'>
 				<Link to='/' className='link'>
-					Create
+					Shop
 				</Link>
-				<Link to='/' className='link'>
-					Businesses
+				<Link to='/categories/' className='link'>
+					Categories
 				</Link>
 				<Link to='/' className='link'>
 					Search
+				</Link>
+				<Link to='/' className='link'>
+					Cart
 				</Link>
 			</div>
 			{user ? authlinks : publiclinks}

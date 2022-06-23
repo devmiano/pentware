@@ -1,3 +1,4 @@
+import uuid
 import cloudinary
 from django.db import models
 from ckeditor.fields import RichTextField
@@ -19,6 +20,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     name = models.CharField(max_length=200)
     photo = cloudinary.models.CloudinaryField('image')
     price = models.DecimalField(max_digits=6, decimal_places=2)
