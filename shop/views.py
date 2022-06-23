@@ -4,13 +4,18 @@ from .models import *
 from .serializers import *
 
 
-class Categories(generics.ListCreateAPIView):
+class CategoryListView(generics.ListAPIView):
     model = Category
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
 
-class Products(generics.ListCreateAPIView):
+class ProductListView(generics.ListCreateAPIView):
     model = Product
-    serializer_class = ProductSerializer
+    serializer_class = ProductListSerializer
+    queryset = Product.objects.all()
+
+
+class ProductDetailView(generics.RetrieveAPIView):
+    serializer_class = ProductDetailSerializer
     queryset = Product.objects.all()
