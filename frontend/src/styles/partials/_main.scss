@@ -1,0 +1,11 @@
+@import 'mixins';
+@import 'palette';
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+* {
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}

@@ -1,0 +1,16 @@
+@mixin btn {
+	border: none;
+	outline: none;
+	color: $dark;
+	cursor: pointer;
+	background: transparent;
+	border-radius: 0rem;
+	letter-spacing: 0.1rem;
+	padding: 0.8rem 0.8rem;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $dark;
+		background: $primary;
+	}
+}

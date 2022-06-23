@@ -1,9 +1,12 @@
+import cloudinary
 from django.db import models
 from ckeditor.fields import RichTextField
+from cloudinary.models import CloudinaryField
 
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
+    photo = cloudinary.models.CloudinaryField('image')
     slug = models.SlugField(max_length=200, unique=True)
 
     class Meta:
@@ -17,7 +20,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=200)
-    img = models.ImageField(upload_to='products/images', blank=True)
+    photo = cloudinary.models.CloudinaryField('image')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     stock = models.IntegerField(default=0)
     description = models.TextField()
