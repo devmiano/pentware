@@ -43,10 +43,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
 	output: {
-		path: [
-			'babel-polyfill',
-			path.resolve(__dirname, 'frontend/static/frontend/public/'),
-		],
+		path: path.resolve(__dirname, 'frontend/static/frontend/public/'),
 		publicPath: '/static/frontend/public/',
 		filename: 'global.js',
 	},
