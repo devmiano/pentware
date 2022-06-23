@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 from django.http import HttpResponse
 from rest_framework import status
 from django.contrib.auth.models import User
-# from .serializers import ProductSerializer,CategorySerializer,RetailerSerializer,ReviewSerializer,CustomerSerializer,AccountSerializer,AdminSerializer,AbstractUserSerializer
+from .serializers import UserSerializer
 
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -31,10 +31,18 @@ def home(request):
 @api_view(['GET'])
 def get_links(request):
    endpoints = {
-    'all':'/api/',
-    'all_todos':'/api/todos'
+    'all links':'api/links/',
+    'register':'api/register/',
+    'get accesss token':'api/token/',
+    'get refresh token':'api/token/refresh/',
    }
    return Response(endpoints)
+
+@api_view(['GET'])
+def get_user(request, pk):
+   user = User.objects.get(id=pk)
+   serilizaer = UserSerializer(user)
+   return Response(serilizaer.data)
 
 @api_view(['POST'])
 def register(request):
