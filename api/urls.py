@@ -4,6 +4,8 @@ from rest_framework_simplejwt.views import TokenRefreshView, TokenVerifyView
 
 urlpatterns = [
     path('', getRoutes),
+    path('shop/', include('shop.urls')),
+    path('cart/', include('cart.urls')),
     path('auth/', include('client.urls')),
     path('token/', UserTokenObtainPairView.as_view()),
     path('token/verify/', TokenVerifyView.as_view()),
