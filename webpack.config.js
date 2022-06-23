@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	mode: 'development',
-	entry: ['babel-polyfill', path.resolve(__dirname, 'frontend/src/global.tsx')],
+	entry: path.resolve(__dirname, 'frontend/src/global.tsx'),
 	devtool: 'inline-source-map',
 	module: {
 		rules: [
@@ -43,7 +43,10 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
 	output: {
-		path: path.resolve(__dirname, 'frontend/static/frontend/public/'),
+		path: [
+			'babel-polyfill',
+			path.resolve(__dirname, 'frontend/static/frontend/public/'),
+		],
 		publicPath: '/static/frontend/public/',
 		filename: 'global.js',
 	},
