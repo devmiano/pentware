@@ -1,0 +1,1090 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "token_blacklist",
+        "model": "blacklistedtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "token_blacklist",
+        "model": "outstandingtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "cart",
+        "model": "cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "cart",
+        "model": "cartitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "shop",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "shop",
+        "model": "product"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2orhqb825y0pwdkmzgj3fvdiuya9d3hf",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWmY0sLUpXvPQGamg6CmTSisjHdXEha6_e-9_zIDbes0bFWXYU7mbMCcfjcmeWjeQbpTvhUrJa_LzHZX7EGrvZakz8vh_h1MVKdvHTTw2LaRGt867Mkxqfc-yKhRFaHhbhToUt8gigPygRkDSlQAF1HM-wPmjTfX:1o4P2k:NAS9T10CnqmnWGUEGubz-fpEcuBpH_zY6rvG9yFRn_M",
+        "expire_date": "2022-07-07T15:46:54.305Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+        "name": "Paints",
+        "photo": "image/upload/v1655999511/znsb4fuzdfuopeojtdcq.jpg",
+        "slug": "paints"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+        "name": "Roofing",
+        "photo": "image/upload/v1655999629/xr8bpoagzfoiqxrvx0nt.jpg",
+        "slug": "roofing"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+        "name": "Hand Tools",
+        "photo": "image/upload/v1655999668/bs7binr9jqid5cw0xgyk.jpg",
+        "slug": "hand-tools"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+        "name": "Power Tools",
+        "photo": "image/upload/v1655999727/xhbohygv6eacemgbm9ka.webp",
+        "slug": "power-tools"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+        "name": "Nails and Bolts",
+        "photo": "image/upload/v1655999757/rzsf2zgafygpcb4govwu.jpg",
+        "slug": "nails-and-bolts"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+        "name": "Cement",
+        "photo": "image/upload/v1655999790/l51s6qslzumn1ji3v4ef.jpg",
+        "slug": "cement"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+        "name": "Steel and Metal",
+        "photo": "image/upload/v1655999946/cnrsymtmkw1vwnw5dp48.jpg",
+        "slug": "steel-and-metal"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "19caf44f-0adc-4436-9593-c132671abcb8",
+    "fields": {
+        "name": "Stainless steel nails",
+        "photo": "image/upload/v1656000298/aon2oxnkqz5aezxuwuwb.jpg",
+        "price": "15.00",
+        "stock": 2000,
+        "description": "Steel nails for walls",
+        "slug": "19caf44f-0adc-4436-9593-c132671abcb8",
+        "manufactured_on": "2022-06-23T16:04:51Z",
+        "category": 5,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "51304a45-269d-4d95-86ef-309ddc46c4fe",
+    "fields": {
+        "name": "Steel pipe",
+        "photo": "image/upload/v1656000142/ytstnhs78vn0qdxzfmlc.jpg",
+        "price": "200.00",
+        "stock": 30,
+        "description": "Stainless steel pipe 2 inches in diameter and 1.2mm thick",
+        "slug": "51304a45-269d-4d95-86ef-309ddc46c4fe",
+        "manufactured_on": "2022-06-23T16:02:05Z",
+        "category": 7,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
+    "fields": {
+        "name": "Duracoat 4L White",
+        "photo": "image/upload/v1656000357/eyqxbhkcqqp4iv0ebtjf.jpg",
+        "price": "500.00",
+        "stock": 20,
+        "description": "Duracoat high quality paint",
+        "slug": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
+        "manufactured_on": "2022-06-23T16:05:52Z",
+        "category": 1,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
+    "fields": {
+        "name": "Y-12 Steel Rods",
+        "photo": "image/upload/v1656000193/xmfmgyo58wqd2bobxhno.jpg",
+        "price": "2000.00",
+        "stock": 2000,
+        "description": "Rods for construction",
+        "slug": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
+        "manufactured_on": "2022-06-23T16:03:09Z",
+        "category": 7,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
+    "fields": {
+        "name": "Nuts and Bolts",
+        "photo": "image/upload/v1656000253/clzwpoymo9idwuth2wq5.jpg",
+        "price": "15.00",
+        "stock": 300,
+        "description": "Nuts and bold 5mm thick",
+        "slug": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
+        "manufactured_on": "2022-06-23T16:03:47Z",
+        "category": 5,
+        "features": ""
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "add_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "change_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "delete_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "view_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "add_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "change_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "delete_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "view_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add cart",
+        "content_type": [
+            "cart",
+            "cart"
+        ],
+        "codename": "add_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change cart",
+        "content_type": [
+            "cart",
+            "cart"
+        ],
+        "codename": "change_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete cart",
+        "content_type": [
+            "cart",
+            "cart"
+        ],
+        "codename": "delete_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view cart",
+        "content_type": [
+            "cart",
+            "cart"
+        ],
+        "codename": "view_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add cart item",
+        "content_type": [
+            "cart",
+            "cartitem"
+        ],
+        "codename": "add_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change cart item",
+        "content_type": [
+            "cart",
+            "cartitem"
+        ],
+        "codename": "change_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete cart item",
+        "content_type": [
+            "cart",
+            "cartitem"
+        ],
+        "codename": "delete_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view cart item",
+        "content_type": [
+            "cart",
+            "cartitem"
+        ],
+        "codename": "view_cartitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add category",
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change category",
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view category",
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add product",
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change product",
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view product",
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$gHjvwOAJRK23Pa8JWppQFJ$OWJxmDYu33C6IsPegAIe/9RLaDBHPo8mmwu4ZKKxeEU=",
+        "last_login": "2022-06-23T15:46:54.303Z",
+        "is_superuser": true,
+        "username": "muchiri",
+        "first_name": "",
+        "last_name": "",
+        "email": "dev.miano@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-23T15:44:59.788Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$vcpVU3UizyvElJAHUI4UPr$MXKQ0ZWmjEi55IqLELHbH9k15VKKmE4+6tS3hd2h0Uc=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "pentware",
+        "first_name": "",
+        "last_name": "",
+        "email": "pentware@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-23T15:45:30.897Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-06-23T15:51:51.861Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Paints",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-06-23T15:53:49.585Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "Roofing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-06-23T15:54:28.294Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Tools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-06-23T15:55:28.126Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "Power Tools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-06-23T15:55:57.807Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "Nails and Bolts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-06-23T15:56:31.101Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "6",
+        "object_repr": "Cement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-06-23T15:59:07.190Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "7",
+        "object_repr": "Steel and Metal",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-06-23T16:00:04.788Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "Hand Tools",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-06-23T16:02:22.432Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "51304a45-269d-4d95-86ef-309ddc46c4fe",
+        "object_repr": "Steel pipe",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-06-23T16:03:13.556Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
+        "object_repr": "Y-12 Steel Rods",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-06-23T16:04:13.510Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
+        "object_repr": "Nuts and Bolts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-06-23T16:04:58.882Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "19caf44f-0adc-4436-9593-c132671abcb8",
+        "object_repr": "Stainless steel nails",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-06-23T16:05:57.831Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
+        "object_repr": "Duracoat 4L White",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
