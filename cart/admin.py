@@ -10,5 +10,3 @@ class CartItemAdmin(admin.ModelAdmin):
 class CartAdmin(admin.ModelAdmin):
   list_display = ['user']
 
-
-

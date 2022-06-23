@@ -16,4 +16,3 @@ class ProductAdmin(admin.ModelAdmin):
     "slug": ("name", )
   }
 
-

@@ -156,4 +156,3 @@ def checkout_page(request):
   return render(request, "shop/checkout.html", {
     "name": "Checkout Page"
   })
-
