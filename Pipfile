@@ -16,6 +16,8 @@ django = "*"
 djangorestframework = "*"
 djangorestframework-simplejwt = "*"
 django-cors-headers = "*"
+django-ckeditor = "*"
+django-js-asset = "*"
 
 [dev-packages]
 autopep8 = "*"
