@@ -175,4 +175,3 @@ def remove_cart(request):
     'status': 200,
     'msg': 'Item Added'
   })
-

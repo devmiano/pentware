@@ -186,10 +186,6 @@ SIMPLE_JWT = {
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
-
-
-
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': None
