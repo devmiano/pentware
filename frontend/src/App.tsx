@@ -18,13 +18,13 @@ function App() {
 				<Routes>
 					<Route path='/' element={<SharedLayout />}>
 						<Route index element={<Home />} />
-						<Route path='products' element={<Products />} />
-						<Route path='categories/' element={<Category />} />
-						<Route path='login/' element={<Login />} />
-						<Route path='signup/' element={<Signup />} />
+						<Route path='/products' element={<Products />} />
+						<Route path='/categories/' element={<Category />} />
+						<Route path='/login/' element={<Login />} />
+						<Route path='/signup/' element={<Signup />} />
 
 						<Route
-							path='dashboard'
+							path='/dashboard/'
 							element={
 								<ProtectedRoute>
 									<Dashboard />

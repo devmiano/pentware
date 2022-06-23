@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
 	const logout = () => {
 		localStorage.removeItem('authTokens');
 		localStorage.removeItem('user');
-		navigate('login/');
+		navigate('/login/');
 	};
 
 	let contextData = {
