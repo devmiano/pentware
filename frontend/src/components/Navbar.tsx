@@ -1,53 +1,48 @@
 import * as React from 'react';
-import { useState } from 'react';
-import { Link } from 'wouter';
+import { Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 
 function Navbar() {
-	const [nav, setNav] = useState(false);
-	const handleNav = () => setNav(!nav);
-	let { user, logoutUser } = React.useContext(AuthContext);
+	const { authTokens, user, logout } = React.useContext(AuthContext);
 
-	const authlinks = (
-		<div className='flex items-center justify-center'>
-			<Link to='/' className='brand'>
-				{user?.email}
-			</Link>
-			<button className='link' onClick={logoutUser}>
-				Logout
-			</button>
-		</div>
-	);
-	const publiclinks = (
-		<div className='flex items-center justify-center'>
-			<Link to='/' className='link'>
-				Login
-			</Link>
-			<Link to='/' className='link'>
-				Signup
-			</Link>
-		</div>
-	);
 	return (
 		<nav className='w-screen z-30 flex justify-between bg-smog-600 p-2'>
 			<Link to='/' className='brand flex items-center justify-center'>
 				PENTWARE
 			</Link>
 			<div className='flex items-center justify-center'>
-				<Link to='/' className='link'>
+				<Link to='shop/' className='link'>
 					Shop
 				</Link>
-				<Link to='/categories/' className='link'>
+				<Link to='categories/' className='link'>
 					Categories
 				</Link>
 				<Link to='/' className='link'>
 					Search
 				</Link>
-				<Link to='/' className='link'>
+				<Link to='cart/' className='link'>
 					Cart
 				</Link>
 			</div>
-			{user ? authlinks : publiclinks}
+			{authTokens ? (
+				<div className='flex items-center justify-center'>
+					<Link to='profile/' className='brand'>
+						{user?.username}
+					</Link>
+					<button className='link' onClick={logout}>
+						Logout
+					</button>
+				</div>
+			) : (
+				<div className='flex items-center justify-center'>
+					<Link to='login/' className='link'>
+						Login
+					</Link>
+					<Link to='signup/' className='link'>
+						Signup
+					</Link>
+				</div>
+			)}
 		</nav>
 	);
 }

@@ -8,7 +8,7 @@ function Products() {
 	const heading = Title({ title: `${data.length} products` });
 
 	return (
-		<>
+		<div>
 			{heading}
 			{data.map((product) =>
 				Card({
@@ -21,7 +21,7 @@ function Products() {
 					category: product.category,
 				})
 			)}
-		</>
+		</div>
 	);
 }
 

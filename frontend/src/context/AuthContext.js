@@ -1,92 +1,38 @@
-import jwtDecode from 'jwt-decode';
-import * as React from 'react';
-import { useLocation } from 'wouter';
-const AuthContext = React.createContext();
+import { createContext, useState, useEffect } from 'react';
+import 'toastify-js/src/toastify.css';
+import { useNavigate } from 'react-router-dom';
+
+const AuthContext = createContext();
+
 export default AuthContext;
 
 export const AuthProvider = ({ children }) => {
-	let [loading, setLoading] = React.useState(true);
-	const [location, setLocation] = useLocation();
-	let [user, setUser] = React.useState(() =>
-		localStorage.getItem('authToken')
-			? jwtDecode(localStorage.getItem('authToken'))
+	const navigate = useNavigate();
+
+	let [user, setUser] = useState(
+		localStorage.getItem('user')
+			? JSON.parse(localStorage.getItem('user'))
+			: 'No user found'
+	);
+	let [authTokens, setAuthTokens] = useState(
+		localStorage.getItem('authTokens')
+			? JSON.parse(localStorage.getItem('authTokens'))
 			: null
 	);
-	let [authToken, setAuthToken] = React.useState(() =>
-		localStorage.getItem('authToken')
-			? JSON.parse(localStorage.getItem('authToken'))
-			: null
-	);
 
-	let loginUser = async (e) => {
-		e.preventDefault();
-		let response = await fetch('/api/token/', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				email: e.target.email.value,
-				password: e.target.password.value,
-			}),
-		});
-
-		let data = await response.json();
-
-		if (response.status === 200) {
-			setAuthToken(data);
-			setUser(jwtDecode(data.access));
-			localStorage.setItem('authToken', JSON.stringify(data));
-			setLocation('/');
-		} else {
-			alert('Something went wrong');
-		}
-	};
-
-	let updateToken = async () => {
-		let response = await fetch('/api/token/refresh/', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				refresh: authToken.refresh,
-			}),
-		});
-
-		let data = await response.json();
-
-		if (response.status === 200) {
-			setAuthToken(data);
-			setUser(jwtDecode(data.access));
-			localStorage.setItem('authToken', JSON.stringify(data));
-			setLocation('/');
-		} else {
-			logoutUser;
-		}
-	};
-
-	let logoutUser = () => {
-		setAuthToken(null);
-		setUser(null);
-		localStorage.removeItem('authToken');
+	const logout = () => {
+		localStorage.removeItem('authTokens');
+		localStorage.removeItem('user');
+		navigate('login/');
 	};
 
 	let contextData = {
 		user: user,
-		loginUser: loginUser,
-		logoutUser: logoutUser,
+		authTokens: authTokens,
+		logout: logout,
+		setAuthTokens: setAuthTokens,
+		setUser: setUser,
 	};
-
-	React.useEffect(() => {
-		let four = 100 * 60 * 4;
-		let interval = setInterval(() => {
-			if (authToken) {
-				updateToken();
-			}
-		}, four);
-		return () => clearInterval(interval);
-	}, [authToken, loading]);
 
 	return (
 		<AuthContext.Provider value={contextData}>{children}</AuthContext.Provider>

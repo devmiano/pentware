@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Navbar from '../components/Navbar';
 import Title from '../components/Title';
 import Products from './Products';
 function Home() {
@@ -7,7 +6,6 @@ function Home() {
 
 	return (
 		<div>
-			<Navbar />
 			{heading}
 			<Products />
 		</div>

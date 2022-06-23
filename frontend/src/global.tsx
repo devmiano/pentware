@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/index.css';
 import './styles/global.scss';
+import 'toastify-js/src/toastify.css';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 
