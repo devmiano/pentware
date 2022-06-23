@@ -1,8 +1,9 @@
 import * as React from 'react';
 
 import AuthContext from '../context/AuthContext';
+import Products from './Products';
 
-const Dashboard = () => {
+const Shop = () => {
 	const { user } = React.useContext(AuthContext);
 	const [userData, setUserData] = React.useState('');
 	React.useEffect(() => {
@@ -20,7 +21,8 @@ const Dashboard = () => {
 			<h4>Dashboard</h4>
 			<h5>User: {user.username}</h5>
 			<p>{userData}</p>
+			<Products />
 		</section>
 	);
 };
-export default Dashboard;
+export default Shop;

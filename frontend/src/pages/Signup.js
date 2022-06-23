@@ -73,7 +73,7 @@ const Signup = () => {
 				setUser(jwt_decode(data2.access));
 				localStorage.setItem('authTokens', JSON.stringify(data2));
 				localStorage.setItem('user', JSON.stringify(jwt_decode(data2.access)));
-				navigate('/dashboard/');
+				navigate('/shop/');
 			} else {
 				Toastify({
 					text: 'Username and email is taken',

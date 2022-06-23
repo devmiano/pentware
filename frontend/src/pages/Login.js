@@ -49,7 +49,7 @@ const Login = () => {
 			setUser(jwt_decode(data.access));
 			localStorage.setItem('authTokens', JSON.stringify(data));
 			localStorage.setItem('user', JSON.stringify(jwt_decode(data.access)));
-			navigate('/dashboard/');
+			navigate('/shop/');
 		} else {
 			Toastify({
 				text: 'Incorrect credentials',

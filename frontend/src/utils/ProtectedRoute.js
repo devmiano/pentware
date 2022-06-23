@@ -21,7 +21,7 @@ function ProtectedRoute({ children }) {
 			},
 			onClick: function () {}, // Callback after click
 		}).showToast();
-		return <Navigate to='/login' />;
+		return <Navigate to='/login/' />;
 	} else {
 		return children;
 	}
