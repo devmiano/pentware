@@ -8,6 +8,10 @@ from decouple import config
 from datetime import timedelta
 from os.path import join, dirname
 from dotenv import load_dotenv, find_dotenv
+import mimetypes
+
+mimetypes.add_type("text/css", ".css", True)
+mimetypes.add_type("text/javascript", ".js", True)
 
 load_dotenv(find_dotenv())
 
@@ -19,6 +23,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+DISABLE_COLLECTSTATIC = 1
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = ['*']
+
+CORS_ORIGIN_WHITELIST = ('https://pentware.herokuapp.com',)
 
 INSTALLED_APPS = [
     'rest_framework',
