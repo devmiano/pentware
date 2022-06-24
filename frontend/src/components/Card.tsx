@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 interface CardInterface {
 	id: string;
@@ -20,17 +21,19 @@ function Card(card: CardInterface) {
 					alt={card.name}
 				/>
 				<div className='p-6'>
-					<h2 className='tracking-widest text-xs title-font font-medium text-gray-400 mb-1'>
-						{card.category}
+					<h2 className='tracking-widest text-xs title-font font-base text-gray-400 mb-1'>
+						KES {card.price}
 					</h2>
 					<h1 className='title-font text-lg font-medium text-smog-300 mb-3'>
 						{card.name}
 					</h1>
 					<p className='leading-relaxed mb-3'>{card.text}</p>
 					<div className='flex items-center flex-wrap '>
-						<button className='bg-smog-400 text-smog-700 hover:scale-105  shadow-cla-blue px-4 py-1 rounded-md'>
+						<Link
+							to={`/product/${card.slug}`}
+							className='bg-smog-400 text-smog-700 hover:scale-105  shadow-cla-blue px-4 py-1 rounded-md'>
 							Learn more
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

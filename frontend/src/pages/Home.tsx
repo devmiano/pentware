@@ -5,7 +5,7 @@ function Home() {
 	const heading = Title({ title: 'Welcome to PentWare' });
 
 	return (
-		<div>
+		<div className='p-8'>
 			{heading}
 			<Products />
 		</div>

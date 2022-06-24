@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import Spinner from './components/Spinner';
 import One from './components/One';
 import SingleProduct from './pages/SingleProduct';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
 	return (
@@ -24,7 +25,7 @@ function App() {
 							<Route index element={<Home />} />
 							<Route path='/products' element={<Products />} />
 							<Route path='/categories/' element={<Category />} />
-							<Route path='/shop/<:id>' element={<SingleProduct />} />
+
 							<Route path='/login/' element={<Login />} />
 							<Route path='/signup/' element={<Signup />} />
 

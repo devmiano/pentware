@@ -3,6 +3,7 @@ import cloudinary
 from django.db import models
 from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -36,6 +37,9 @@ class Product(models.Model):
         ordering = ('name', )
         verbose_name = 'product'
         verbose_name_plural = 'products'
+
+    def get_absolute_url(self):
+        return reverse('project-detail', kwargs={"slug": self.slug})
 
     def __str__(self):
         return self.name

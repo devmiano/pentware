@@ -2,35 +2,17 @@ import * as React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Single from '../components/Single';
 import { useFetchProductsQuery } from '../services/product';
+import { useDispatch } from 'react-redux';
 
-function SingleProduct() {
-	const options = (async) => ({
-		method: 'GET',
-		headers: {
-			Accept: 'application/json',
-			'Content-Type': 'application/json; charset=UTF-8',
-		},
-		body: JSON.stringify({
-			id: id,
-			name: name,
-			photo: photo,
-			price: price,
-			stock: stock,
-			description: description,
-			slug: slug,
-			category: category,
-		}),
-	});
+function SingleProduct(props) {
+	const { data, isFetching } = useFetchProductsQuery();
+	const dispatch = useDispatch();
+	let params = useParams();
 
-	let res = fetch(`/api/shop/${id}`, options);
-	let data = res.json();
-	console.log(data);
+	dispatch(data(params.slug));
 
 	return (
 		<section className='section product'>
-			<p>{data.id}</p>
-			<img src={data.photo} alt='' />
-
 			<Link to='/products'>Go back</Link>
 		</section>
 	);
