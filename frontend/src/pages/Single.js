@@ -24,7 +24,7 @@ function Single() {
 	}, []);
 
 	return (
-		<div>
+		<div className='max-w-md mx-auto bg-smog-600 rounded-lg shadow-md overflow-hidden md:max-w-2xl m-2 h-auto'>
 			<h1>Product Page</h1>
 			<h1>{singleProduct.name}</h1>
 			<img
