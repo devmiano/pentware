@@ -1,5 +1,218 @@
 [
 {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+        "name": "Paints",
+        "photo": "image/upload/v1655999511/znsb4fuzdfuopeojtdcq.jpg",
+        "slug": "paints"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+        "name": "Roofing",
+        "photo": "image/upload/v1655999629/xr8bpoagzfoiqxrvx0nt.jpg",
+        "slug": "roofing"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+        "name": "Hand Tools",
+        "photo": "image/upload/v1655999668/bs7binr9jqid5cw0xgyk.jpg",
+        "slug": "hand-tools"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+        "name": "Power Tools",
+        "photo": "image/upload/v1655999727/xhbohygv6eacemgbm9ka.webp",
+        "slug": "power-tools"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+        "name": "Nails and Bolts",
+        "photo": "image/upload/v1655999757/rzsf2zgafygpcb4govwu.jpg",
+        "slug": "nails-and-bolts"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+        "name": "Cement",
+        "photo": "image/upload/v1655999790/l51s6qslzumn1ji3v4ef.jpg",
+        "slug": "cement"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+        "name": "Steel and Metal",
+        "photo": "image/upload/v1655999946/cnrsymtmkw1vwnw5dp48.jpg",
+        "slug": "steel-and-metal"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "0c1ff7b4-6ec5-4513-aa1d-01dc1573d385",
+    "fields": {
+        "name": "Assorted hand tools",
+        "photo": "image/upload/v1656044925/lqxxqtplbz4h9cvwwtc3.jpg",
+        "price": "230.00",
+        "stock": 34,
+        "description": "Basic hand tools for you to use",
+        "slug": "0c1ff7b4-6ec5-4513-aa1d-01dc1573d385",
+        "manufactured_on": "2022-06-24T04:28:25Z",
+        "category": 3,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "19caf44f-0adc-4436-9593-c132671abcb8",
+    "fields": {
+        "name": "Stainless steel nails",
+        "photo": "image/upload/v1656000298/aon2oxnkqz5aezxuwuwb.jpg",
+        "price": "15.00",
+        "stock": 2000,
+        "description": "Steel nails for walls",
+        "slug": "19caf44f-0adc-4436-9593-c132671abcb8",
+        "manufactured_on": "2022-06-23T16:04:51Z",
+        "category": 5,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "4ee5da82-b4cb-49bf-8ddd-5a10712b8e1b",
+    "fields": {
+        "name": "Dumu Zas Iron Sheets Plain",
+        "photo": "image/upload/v1656045124/ffqzg1uee2tnmrnng2t8.jpg",
+        "price": "450.00",
+        "stock": 200,
+        "description": "High Quality and long lasting mabati",
+        "slug": "4ee5da82-b4cb-49bf-8ddd-5a10712b8e1b",
+        "manufactured_on": "2022-06-24T04:31:56Z",
+        "category": 2,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "51304a45-269d-4d95-86ef-309ddc46c4fe",
+    "fields": {
+        "name": "Steel pipe",
+        "photo": "image/upload/v1656000142/ytstnhs78vn0qdxzfmlc.jpg",
+        "price": "200.00",
+        "stock": 30,
+        "description": "Stainless steel pipe 2 inches in diameter and 1.2mm thick",
+        "slug": "51304a45-269d-4d95-86ef-309ddc46c4fe",
+        "manufactured_on": "2022-06-23T16:02:05Z",
+        "category": 7,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
+    "fields": {
+        "name": "Duracoat 4L White",
+        "photo": "image/upload/v1656000357/eyqxbhkcqqp4iv0ebtjf.jpg",
+        "price": "500.00",
+        "stock": 20,
+        "description": "Duracoat high quality paint",
+        "slug": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
+        "manufactured_on": "2022-06-23T16:05:52Z",
+        "category": 1,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "6ff2c108-c0ee-4bf7-ae00-7cd60ddcf246",
+    "fields": {
+        "name": "Silk white vinyl paint 4L",
+        "photo": "image/upload/v1656045060/pzcw48n2qo4mcr53mvsb.jpg",
+        "price": "400.00",
+        "stock": 20,
+        "description": "High quality paint from Crown Paints for use in the motor industry for a great finish",
+        "slug": "6ff2c108-c0ee-4bf7-ae00-7cd60ddcf246",
+        "manufactured_on": "2022-06-24T04:30:53Z",
+        "category": 1,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "759b5486-f75f-491a-ae95-596d049ecaef",
+    "fields": {
+        "name": "Pliers",
+        "photo": "image/upload/v1656044971/bycrjqins71iqdlgv8wg.jpg",
+        "price": "350.00",
+        "stock": 240,
+        "description": "Firm grip electrical pliers",
+        "slug": "759b5486-f75f-491a-ae95-596d049ecaef",
+        "manufactured_on": "2022-06-24T04:29:25Z",
+        "category": 3,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "b5e1e217-e59d-4020-932e-2b58985371a8",
+    "fields": {
+        "name": "Nyumba Mabati Box Profile",
+        "photo": "image/upload/v1656045199/ail7kdedrjbribugx2l2.jpg",
+        "price": "600.00",
+        "stock": 200,
+        "description": "Green and beautiful",
+        "slug": "b5e1e217-e59d-4020-932e-2b58985371a8",
+        "manufactured_on": "2022-06-24T04:33:12Z",
+        "category": 2,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
+    "fields": {
+        "name": "Y-12 Steel Rods",
+        "photo": "image/upload/v1656000193/xmfmgyo58wqd2bobxhno.jpg",
+        "price": "2000.00",
+        "stock": 2000,
+        "description": "Rods for construction",
+        "slug": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
+        "manufactured_on": "2022-06-23T16:03:09Z",
+        "category": 7,
+        "features": ""
+    }
+},
+{
+    "model": "shop.product",
+    "pk": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
+    "fields": {
+        "name": "Nuts and Bolts",
+        "photo": "image/upload/v1656000253/clzwpoymo9idwuth2wq5.jpg",
+        "price": "15.00",
+        "stock": 300,
+        "description": "Nuts and bold 5mm thick",
+        "slug": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
+        "manufactured_on": "2022-06-23T16:03:47Z",
+        "category": 5,
+        "features": ""
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -101,144 +314,6 @@
     "fields": {
         "session_data": ".eJxVjEEOgjAQRe_StWmY0sLUpXvPQGamg6CmTSisjHdXEha6_e-9_zIDbes0bFWXYU7mbMCcfjcmeWjeQbpTvhUrJa_LzHZX7EGrvZakz8vh_h1MVKdvHTTw2LaRGt867Mkxqfc-yKhRFaHhbhToUt8gigPygRkDSlQAF1HM-wPmjTfX:1o4P2k:NAS9T10CnqmnWGUEGubz-fpEcuBpH_zY6rvG9yFRn_M",
         "expire_date": "2022-07-07T15:46:54.305Z"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 1,
-    "fields": {
-        "name": "Paints",
-        "photo": "image/upload/v1655999511/znsb4fuzdfuopeojtdcq.jpg",
-        "slug": "paints"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 2,
-    "fields": {
-        "name": "Roofing",
-        "photo": "image/upload/v1655999629/xr8bpoagzfoiqxrvx0nt.jpg",
-        "slug": "roofing"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 3,
-    "fields": {
-        "name": "Hand Tools",
-        "photo": "image/upload/v1655999668/bs7binr9jqid5cw0xgyk.jpg",
-        "slug": "hand-tools"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 4,
-    "fields": {
-        "name": "Power Tools",
-        "photo": "image/upload/v1655999727/xhbohygv6eacemgbm9ka.webp",
-        "slug": "power-tools"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 5,
-    "fields": {
-        "name": "Nails and Bolts",
-        "photo": "image/upload/v1655999757/rzsf2zgafygpcb4govwu.jpg",
-        "slug": "nails-and-bolts"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 6,
-    "fields": {
-        "name": "Cement",
-        "photo": "image/upload/v1655999790/l51s6qslzumn1ji3v4ef.jpg",
-        "slug": "cement"
-    }
-},
-{
-    "model": "shop.category",
-    "pk": 7,
-    "fields": {
-        "name": "Steel and Metal",
-        "photo": "image/upload/v1655999946/cnrsymtmkw1vwnw5dp48.jpg",
-        "slug": "steel-and-metal"
-    }
-},
-{
-    "model": "shop.product",
-    "pk": "19caf44f-0adc-4436-9593-c132671abcb8",
-    "fields": {
-        "name": "Stainless steel nails",
-        "photo": "image/upload/v1656000298/aon2oxnkqz5aezxuwuwb.jpg",
-        "price": "15.00",
-        "stock": 2000,
-        "description": "Steel nails for walls",
-        "slug": "19caf44f-0adc-4436-9593-c132671abcb8",
-        "manufactured_on": "2022-06-23T16:04:51Z",
-        "category": 5,
-        "features": ""
-    }
-},
-{
-    "model": "shop.product",
-    "pk": "51304a45-269d-4d95-86ef-309ddc46c4fe",
-    "fields": {
-        "name": "Steel pipe",
-        "photo": "image/upload/v1656000142/ytstnhs78vn0qdxzfmlc.jpg",
-        "price": "200.00",
-        "stock": 30,
-        "description": "Stainless steel pipe 2 inches in diameter and 1.2mm thick",
-        "slug": "51304a45-269d-4d95-86ef-309ddc46c4fe",
-        "manufactured_on": "2022-06-23T16:02:05Z",
-        "category": 7,
-        "features": ""
-    }
-},
-{
-    "model": "shop.product",
-    "pk": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
-    "fields": {
-        "name": "Duracoat 4L White",
-        "photo": "image/upload/v1656000357/eyqxbhkcqqp4iv0ebtjf.jpg",
-        "price": "500.00",
-        "stock": 20,
-        "description": "Duracoat high quality paint",
-        "slug": "6ecf1add-2bf8-4c07-97be-9ef6f8efb28a",
-        "manufactured_on": "2022-06-23T16:05:52Z",
-        "category": 1,
-        "features": ""
-    }
-},
-{
-    "model": "shop.product",
-    "pk": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
-    "fields": {
-        "name": "Y-12 Steel Rods",
-        "photo": "image/upload/v1656000193/xmfmgyo58wqd2bobxhno.jpg",
-        "price": "2000.00",
-        "stock": 2000,
-        "description": "Rods for construction",
-        "slug": "d9c3fdb1-c215-41e9-91cc-43a2195eef7a",
-        "manufactured_on": "2022-06-23T16:03:09Z",
-        "category": 7,
-        "features": ""
-    }
-},
-{
-    "model": "shop.product",
-    "pk": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
-    "fields": {
-        "name": "Nuts and Bolts",
-        "photo": "image/upload/v1656000253/clzwpoymo9idwuth2wq5.jpg",
-        "price": "15.00",
-        "stock": 300,
-        "description": "Nuts and bold 5mm thick",
-        "slug": "f7564468-dc5d-4d28-9c3e-f4154e15d64b",
-        "manufactured_on": "2022-06-23T16:03:47Z",
-        "category": 5,
-        "features": ""
     }
 },
 {
@@ -1085,6 +1160,187 @@
         "object_repr": "Duracoat 4L White",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-06-24T04:28:43.496Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "0c1ff7b4-6ec5-4513-aa1d-01dc1573d385",
+        "object_repr": "Assorted hand tools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-06-24T04:29:29.947Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "759b5486-f75f-491a-ae95-596d049ecaef",
+        "object_repr": "Pliers",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-06-24T04:30:58.794Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "6ff2c108-c0ee-4bf7-ae00-7cd60ddcf246",
+        "object_repr": "Silk white vinyl paint 4L",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2022-06-24T04:32:02.661Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "4ee5da82-b4cb-49bf-8ddd-5a10712b8e1b",
+        "object_repr": "Dumu Zas Iron Sheets Plain",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2022-06-24T04:33:17.776Z",
+        "user": [
+            "muchiri"
+        ],
+        "content_type": [
+            "shop",
+            "product"
+        ],
+        "object_id": "b5e1e217-e59d-4020-932e-2b58985371a8",
+        "object_repr": "Nyumba Mabati Box Profile",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "77a5194f372d4804b4cc65be763803e8",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxMjU2OCwiaWF0IjoxNjU2MDIwNTY4LCJqdGkiOiI3N2E1MTk0ZjM3MmQ0ODA0YjRjYzY1YmU3NjM4MDNlOCIsInVzZXJfaWQiOjF9.szYZg07Xo7pWGx8Pv_uTEAXl0T2I4dX9dmXgjrz8OZo",
+        "created_at": "2022-06-23T21:42:48.015Z",
+        "expires_at": "2022-07-23T21:42:48Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "e1d4c465a90142179c1453e4b8eaf7bf",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxMzc3OSwiaWF0IjoxNjU2MDIxNzc5LCJqdGkiOiJlMWQ0YzQ2NWE5MDE0MjE3OWMxNDUzZTRiOGVhZjdiZiIsInVzZXJfaWQiOjF9.mrTnyu6x082tGathpS2gwndTEu-I7FaTanto_pmPRrk",
+        "created_at": "2022-06-23T22:02:59.836Z",
+        "expires_at": "2022-07-23T22:02:59Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "848943f934e2432a9a65b541c3e908a8",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxNDUwOSwiaWF0IjoxNjU2MDIyNTA5LCJqdGkiOiI4NDg5NDNmOTM0ZTI0MzJhOWE2NWI1NDFjM2U5MDhhOCIsInVzZXJfaWQiOjF9.6xJ1WFJ4jlRj7shnjM-q-cD3gsnr92VtEzXYQuP7wuw",
+        "created_at": "2022-06-23T22:15:09.909Z",
+        "expires_at": "2022-07-23T22:15:09Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "a38d416bbce742e696549a04b8b9d20b",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxNDY2MSwiaWF0IjoxNjU2MDIyNjYxLCJqdGkiOiJhMzhkNDE2YmJjZTc0MmU2OTY1NDlhMDRiOGI5ZDIwYiIsInVzZXJfaWQiOjF9.fxyxW6PTc9mlzRNY14-aXh3Gezg0myf9RutypDcYWNI",
+        "created_at": "2022-06-23T22:17:41.630Z",
+        "expires_at": "2022-07-23T22:17:41Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "5b299e290d7b4e52bf8c439c83df6d4e",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxNTIxNSwiaWF0IjoxNjU2MDIzMjE1LCJqdGkiOiI1YjI5OWUyOTBkN2I0ZTUyYmY4YzQzOWM4M2RmNmQ0ZSIsInVzZXJfaWQiOjF9.1q6ygpX0qRvXiSn5SBrJ2Ql936Ek5Z1ku0RyV2yFal0",
+        "created_at": "2022-06-23T22:26:55.348Z",
+        "expires_at": "2022-07-23T22:26:55Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "c0da2e4c70b044b5847aeda075a60537",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYxNTMzMywiaWF0IjoxNjU2MDIzMzMzLCJqdGkiOiJjMGRhMmU0YzcwYjA0NGI1ODQ3YWVkYTA3NWE2MDUzNyIsInVzZXJfaWQiOjF9.NsDMdOqeXDLlCkEX7tzpNh5ZTPLHd5KQNS4avXVWooU",
+        "created_at": "2022-06-23T22:28:53.658Z",
+        "expires_at": "2022-07-23T22:28:53Z"
+    }
+},
+{
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "muchiri"
+        ],
+        "jti": "0c5b49cd54964492a73c3435cab32632",
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1ODYzMTQzNiwiaWF0IjoxNjU2MDM5NDM2LCJqdGkiOiIwYzViNDljZDU0OTY0NDkyYTczYzM0MzVjYWIzMjYzMiIsInVzZXJfaWQiOjF9.U03BcQPb4hYKSLMMiXbCwSsxCj6a1DRXjewfDU3DWa8",
+        "created_at": "2022-06-24T02:57:16.938Z",
+        "expires_at": "2022-07-24T02:57:16Z"
     }
 }
 ]
