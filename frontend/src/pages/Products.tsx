@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Card from '../components/Card';
-import FilterBtn from '../components/FilterBtn';
 import Title from '../components/Title';
 import { useFetchProductsQuery } from '../services/product';
 

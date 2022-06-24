@@ -4,43 +4,37 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SharedLayout from './utils/SharedLayout';
 import Products from './pages/Products';
 import ProtectedRoute from './utils/ProtectedRoute';
-import Error from './pages/Error';
 import Shop from './pages/Shop';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Spinner from './components/Spinner';
-import One from './components/One';
-import SingleProduct from './pages/SingleProduct';
-import ProductDetail from './components/ProductDetail';
+import Single from './pages/Single';
 
 function App() {
 	return (
 		<BrowserRouter>
-			<React.Suspense fallback={<Spinner />}>
-				<AuthProvider>
-					<Routes>
-						<Route path='/' element={<SharedLayout />}>
-							<Route index element={<Home />} />
-							<Route path='/products' element={<Products />} />
-							<Route path='/categories/' element={<Category />} />
+			<AuthProvider>
+				<Routes>
+					<Route path='/' element={<SharedLayout />}>
+						<Route index element={<Home />} />
+						<Route path='/products' element={<Products />} />
+						<Route path='product/:slug' element={<Single />} />
+						<Route path='/categories/' element={<Category />} />
+						<Route path='/login/' element={<Login />} />
+						<Route path='/signup/' element={<Signup />} />
 
-							<Route path='/login/' element={<Login />} />
-							<Route path='/signup/' element={<Signup />} />
-
-							<Route
-								path='/shop/'
-								element={
-									<ProtectedRoute>
-										<Shop />
-									</ProtectedRoute>
-								}
-							/>
-						</Route>
-					</Routes>
-				</AuthProvider>
-			</React.Suspense>
+						<Route
+							path='/shop/'
+							element={
+								<ProtectedRoute>
+									<Shop />
+								</ProtectedRoute>
+							}
+						/>
+					</Route>
+				</Routes>
+			</AuthProvider>
 		</BrowserRouter>
 	);
 }

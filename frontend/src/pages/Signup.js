@@ -45,7 +45,7 @@ const Signup = () => {
 					password: password,
 				}),
 			};
-			let res = await fetch('/api/register/', options);
+			let res = await fetch('/api/auth/register/', options);
 			let data = await res.json();
 			if (res.status === 200) {
 				Toastify({
@@ -99,7 +99,9 @@ const Signup = () => {
 							Register
 						</h1>
 						<div>
-							<label for='name' className='block mb-1 text-smog-300 font-base'>
+							<label
+								htmlFor='name'
+								className='block mb-1 text-smog-300 font-base'>
 								Username
 							</label>
 							<input
@@ -112,7 +114,9 @@ const Signup = () => {
 							/>
 						</div>
 						<div>
-							<label for='email' className='block mb-1 text-smog-300 font-base'>
+							<label
+								htmlFor='email'
+								className='block mb-1 text-smog-300 font-base'>
 								Email
 							</label>
 							<input
@@ -126,7 +130,7 @@ const Signup = () => {
 						</div>
 						<div>
 							<label
-								for='password'
+								htmlFor='password'
 								className='block mb-1 text-smog-300 font-base'>
 								Password
 							</label>
@@ -141,7 +145,7 @@ const Signup = () => {
 						</div>
 						<div>
 							<label
-								for='conPassword'
+								htmlFor='conPassword'
 								className='block mb-1 text-smog-300 font-base'>
 								Password
 							</label>
