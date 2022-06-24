@@ -31,9 +31,9 @@ function Card(card: CardInterface) {
 					<h2 className='text-smog-300 text-xs uppercase'>{card.price}</h2>
 					<p className='mt-2 text-ash-500'>{card.text}</p>
 					<a
-						href='#'
+						href={`/product-details/${card.slug}/`}
 						className='block mt-3 text-sm leading-tight font-medium text-ash-300 hover:underline uppercase'>
-						{card.slug}
+						{card.category}
 					</a>
 				</div>
 			</div>

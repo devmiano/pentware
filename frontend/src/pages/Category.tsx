@@ -17,7 +17,7 @@ function Category() {
 					subtitle: category.location,
 					text: category.about,
 					photo: category.photo,
-					link: 'View',
+					slug: category.slug,
 				})
 			)}
 		</div>

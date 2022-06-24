@@ -6,7 +6,7 @@ interface CardInterface {
 	subtitle: string;
 	text: string;
 	photo: string;
-	link: string;
+	slug: string;
 }
 
 function LongCard(card: CardInterface) {
@@ -29,9 +29,9 @@ function LongCard(card: CardInterface) {
 					<h2 className='text-smog-300 text-xs uppercase'>{card.subtitle}</h2>
 					<p className='mt-2 text-ash-500'>{card.text}</p>
 					<a
-						href='#'
+						href={card.slug}
 						className='block mt-3 text-sm leading-tight font-medium text-ash-300 hover:underline uppercase'>
-						{card.link}
+						{card.slug}
 					</a>
 				</div>
 			</div>
