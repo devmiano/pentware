@@ -91,69 +91,76 @@ const Signup = () => {
 	};
 
 	return (
-		<section className='section'>
-			<form className='form' onSubmit={handleSubmit}>
-				<h5>Signup</h5>
-				<div className='form-row'>
-					<label htmlFor='name' className='form-label'>
-						Username
-					</label>
-					<input
-						type='text'
-						className='form-input'
-						id='name'
-						value={name}
-						name='name'
-						onChange={(e) => setName(e.target.value)}
-					/>
+		<div className='h-full bg-smog-700 flex justify-center items-center w-full mt-12'>
+			<form onSubmit={handleSubmit}>
+				<div className='bg-smog-600 px-10 py-8 rounded-xl w-screen shadow-md max-w-sm'>
+					<div className='space-y-4'>
+						<h1 className='text-center text-2xl font-semibold text-smog-200'>
+							Register
+						</h1>
+						<div>
+							<label for='name' className='block mb-1 text-smog-300 font-base'>
+								Username
+							</label>
+							<input
+								type='text'
+								className='bg-smog-700 px-4 py-2 outline-none rounded-md w-full'
+								id='name'
+								value={name}
+								name='name'
+								onChange={(e) => setName(e.target.value)}
+							/>
+						</div>
+						<div>
+							<label for='email' className='block mb-1 text-smog-300 font-base'>
+								Email
+							</label>
+							<input
+								type='email'
+								className='bg-indigo-50 px-4 py-2 outline-none rounded-md w-full'
+								id='email'
+								name='email'
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+							/>
+						</div>
+						<div>
+							<label
+								for='password'
+								className='block mb-1 text-smog-300 font-base'>
+								Password
+							</label>
+							<input
+								type='password'
+								className='bg-indigo-50 px-4 py-2 outline-none rounded-md w-full'
+								id='password'
+								value={password}
+								name='password'
+								onChange={(e) => setPassword(e.target.value)}
+							/>
+						</div>
+						<div>
+							<label
+								for='conPassword'
+								className='block mb-1 text-smog-300 font-base'>
+								Password
+							</label>
+							<input
+								type='password'
+								className='bg-indigo-50 px-4 py-2 outline-none rounded-md w-full'
+								id='conPassword'
+								value={conPassword}
+								name='conPassword'
+								onChange={(e) => setConPassword(e.target.value)}
+							/>
+						</div>
+					</div>
+					<button className='mt-4 w-full bg-smog-400 text-smog-700 py-2 rounded-md font-medium text-lg tracking-wide'>
+						Register
+					</button>
 				</div>
-				<div className='form-row'>
-					<label htmlFor='email' className='form-label'>
-						Email
-					</label>
-					<input
-						type='email'
-						className='form-input'
-						id='email'
-						name='email'
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-					/>
-				</div>
-				<div className='form-row'>
-					<label htmlFor='password' className='form-label'>
-						Password
-					</label>
-					<input
-						type='password'
-						className='form-input'
-						id='password'
-						value={password}
-						name='password'
-						onChange={(e) => setPassword(e.target.value)}
-					/>
-				</div>
-				<div className='form-row'>
-					<label htmlFor='ConPassword' className='form-label'>
-						Confirm Password
-					</label>
-					<input
-						type='password'
-						className='form-input'
-						id='conPassword'
-						value={conPassword}
-						name='conPassword'
-						onChange={(e) => setConPassword(e.target.value)}
-					/>
-				</div>
-				<button type='submit' className='btn btn-block'>
-					Signup
-				</button>
-				<p>
-					Have an account? <Link to='login/'>Login</Link>
-				</p>
 			</form>
-		</section>
+		</div>
 	);
 };
 export default Signup;

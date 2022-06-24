@@ -68,44 +68,48 @@ const Login = () => {
 	};
 
 	return (
-		<section className='section'>
-			<form className='form' onSubmit={handleSubmit}>
-				<h5>login</h5>
-				<div className='form-row'>
-					<label htmlFor='name' className='form-label'>
-						Username
-					</label>
-					<input
-						type='text'
-						className='form-input'
-						id='name'
-						name='name'
-						value={name}
-						onChange={(e) => setName(e.target.value)}
-					/>
+		<div className='h-full bg-smog-700 flex justify-center items-center w-full mt-24'>
+			<form onSubmit={handleSubmit}>
+				<div className='bg-smog-600 px-10 py-8 rounded-xl w-screen shadow-md max-w-sm'>
+					<div className='space-y-4'>
+						<h1 className='text-center text-2xl font-semibold text-smog-200'>
+							Login
+						</h1>
+						<div>
+							<label for='name' className='block mb-1 text-smog-300 font-base'>
+								Username
+							</label>
+							<input
+								type='text'
+								className='bg-smog-700 px-4 py-2 outline-none rounded-md w-full'
+								id='name'
+								value={name}
+								name='name'
+								onChange={(e) => setName(e.target.value)}
+							/>
+						</div>
+						<div>
+							<label
+								for='password'
+								className='block mb-1 text-smog-300 font-base'>
+								Password
+							</label>
+							<input
+								type='password'
+								className='bg-indigo-50 px-4 py-2 outline-none rounded-md w-full'
+								id='password'
+								value={password}
+								name='password'
+								onChange={(e) => setPassword(e.target.value)}
+							/>
+						</div>
+					</div>
+					<button className='mt-4 w-full bg-smog-400 text-smog-700 py-2 rounded-md font-medium text-lg tracking-wide'>
+						Login
+					</button>
 				</div>
-
-				<div className='form-row'>
-					<label htmlFor='password' className='form-label'>
-						Password
-					</label>
-					<input
-						type='password'
-						className='form-input'
-						id='password'
-						value={password}
-						name='password'
-						onChange={(e) => setPassword(e.target.value)}
-					/>
-				</div>
-				<button type='submit' className='btn btn-block'>
-					login
-				</button>
-				<p>
-					Need Account? <Link to='/signup/'>Register</Link>
-				</p>
 			</form>
-		</section>
+		</div>
 	);
 };
 export default Login;

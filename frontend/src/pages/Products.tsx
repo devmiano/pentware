@@ -9,9 +9,7 @@ function Products() {
 	const heading = Title({ title: `${data.length} products` });
 
 	return (
-		<div>
-			{heading}
-
+		<div className='flex flex-wrap -m-4'>
 			{data.map((product) =>
 				Card({
 					id: product.id,
